@@ -1,4 +1,4 @@
-<img width="1618" height="912" alt="Screenshot 2025-10-06 205216" src="https://github.com/user-attachments/assets/ea1e8693-dc0f-4d75-9a19-eff27f69d40d" /># Ex.05 Design a Website for Server Side Processing
+## Ex.05 Design a Website for Server Side Processing
 ## Date: 06/10/2025
 
 ## AIM:
