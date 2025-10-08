@@ -33,67 +33,78 @@ Publish the website in the given URL.
 
 ## PROGRAM :    math.html
 ```
-<html>
-<head>
-<title>Body Mass Index</title>
-<style type="text/css">
-body
-<h1 style="color:pink;">hema priya.s (25017270)</h1>
-{
-  background-color:green;
-}
-.edge{
-width:1440px;
-margin-left:auto;
-margin-right:auto;
-padding-top:250px;
-padding-left:300px;    
-}
-.box{
-display:block;
-border:Thick dashed lime;
-width:500px;
-min-height:300px;
-font-size:20px;
-background-color:blue;    
-}
-.formelt{
-    color:orango;
-    text-align: center;
-    margin-top: 7px;
-    margin-bottom: 6px;
-}
-h1
-{
-color:rgb(255,0,179);
-text-align:center;
-padding-top: 20px;
-}
-</style>
-</head>
-<body>
-  <div class="edge">
-  <div class="box">
-  <h1>Body Mass Index</h1>
-  <form method="POST">
-    {% csrf_token %}
-  <div class="formelt">
-    Weight: <input type="text" name="weight" value="{{w}}"></input>(in kg)<br/>
-  </div>
-  <div class="formelt">
-    Height: <input type="text" name="height" value="{{h}}"></input>(in m)<br/>
-  </div>
-  <div class="formelt">
-    <input type="submit" value="Calculate"></input><br/>
-  </div>
-  <div class="formelt">
-    BMI:<input type="text" name="bmi" value="{{bmi}}"></input>kg/m<sup>2</sup><br/>
-  </div>
-  </form> 
-  </div>
-  </div>
+<html> 
+<head> 
+<title>BMI</title> 
+<style>
+        body{
+          background-color: rgb(89, 67, 233);
+          border-top: 20;
+        }
+        .m{
+          background-color:rgb(225, 44, 242);
+          border-style: dotted;
+          margin-top: 150px;
+          margin-left: 500px;
+          margin-right: 500px;
+          
+        }
+            .main{
+                font-size: 250%;
+                text-align: center;
+                background-color: rgb(167, 21, 230);
+                 margin-left: 50px;
+                  margin-right: 50px;
+                  padding: 50px;
+                  
+                  
+            }
+            .a{
+                font-size: 150%;
+                text-align: center;
+                background-color: rgb(52, 33, 62);
+                 margin-left: 50px;
+                  margin-right: 50px;
+                
+                 
+            }
+            form{
+              text-align: center;
+              background-color: rgb(188, 50, 195);
+               margin-left: 50px;
+             margin-right: 50px;
+             padding: 50px;
+            }
+           
+        </style>
+</head> 
+
+    <center>
+    <h1>HEMA PRIYA S(25017270)</h1>
+<div class="edge"> 
+<div class="box"> 
+<h1>BMI</h1> 
+<form method="POST">
+{%csrf_token %}
+<div class="formelt"> 
+height:<input type="text" name="height" value="{{h}}"></input>(in m)<br/> 
+</div> 
+<div class="formelt"> 
+weight:<input type="text" name="weight" value="{{w}}"></input>(in kg)<br/> 
+</div> 
+<div class="formelt"> 
+<input type="submit" value="Calculate"></input><br/> 
+</div> 
+<div class="formelt"> 
+BMI:<input type="text" name="BMI" value="{{BMI}}"></input>kg/m<sup>2</sup><br/> 
+</div>
+</form>
+</div>
+</div> 
 </body>
-</html> 
+
+
+
 
 views.py
 
@@ -137,12 +148,11 @@ urlpatterns = [
 ```
 
 ## SERVER SIDE PROCESSING: 
-<img width="1920" height="1200" alt="Screenshot (22)" src="https://github.com/user-attachments/assets/9a9a0b4e-51ac-4e4a-90ce-894349da1da1" />
-
+![alt text](<Screenshot (46).png>)
 
 
 ## HOMEPAGE:
-<img width="1277" height="788" alt="image" src="https://github.com/user-attachments/assets/c138016e-6e75-4789-a62a-e2c5d29b7b7c" />
+![alt text](<Screenshot (45).png>)
 
 
 
